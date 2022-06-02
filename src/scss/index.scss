@@ -1,0 +1,236 @@
+body {
+  all: unset;
+  background-color: beige;
+}
+
+hr {
+  width: 95%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-color: black;
+  color: black;
+}
+
+.container {
+  width: 8.5in;
+  height: 11in;
+  margin: 1em;
+  padding: 1em;
+  background-color: white;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.name {
+  margin: 0;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  justify-self: start;
+  align-self: start;
+}
+
+.summary {
+  padding: 0;
+  margin: 0 2em 0 0;
+}
+
+.skills {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-auto-rows: min-content;
+  list-style-type: none;
+
+  li {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+    position: relative;
+  }
+}
+
+ul.personal {
+  margin: 0;
+  padding-left: 0;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  justify-self: start;
+
+  li {
+    display: inline;
+    list-style-type: none;
+  }
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0 2em 0 0;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  justify-self: end;
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+
+  .link {
+    align-self: end;
+  }
+}
+
+.content-header {
+  margin-block-start: 0.5em;
+  margin-block-end: 0;
+}
+
+.content-header-break {
+  margin-block-end: 0.1em;
+  margin-block-start: 0.2em;
+}
+
+.job-history {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.job {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-rows: min-content;
+
+  .job-title {
+    margin: 0.2em 0 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .job-company {
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .job-term {
+    margin: 0;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: end;
+    margin-inline-end: 2em;
+  }
+
+  .job-info {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+
+    .job-desc {
+      list-style: none;
+    }
+
+    li.job-desc::before {
+      content: "\2022 ";
+      padding: 0 0.3em 0 0;
+    }
+  }
+}
+
+.edus {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0;
+  list-style-type: none;
+
+  .edu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
+
+    .edu-title {
+      margin: 0;
+      padding: 0;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    .edu-location {
+      margin: 0;
+      padding: 0;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      justify-self: end;
+      align-self: end;
+      padding-right: 2em;
+    }
+
+    .edu-degree {
+      margin: 0;
+      padding: 0;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    .edu-date {
+      margin: 0;
+      padding: 0;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      justify-self: end;
+      padding-right: 2em;
+    }
+
+    ul.edu-classes {
+      margin: 0;
+      padding: 0;
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-auto-rows: min-content;
+
+      li.edu-class {
+        list-style-type: none;
+      }
+
+      li.edu-class::before {
+        content: "\2022 ";
+        padding: 0 0.3em 0 0;
+      }
+
+      li.edu-class:first-child::before {
+        content: "";
+        padding: 0;
+      }
+
+      li.edu-class:first-child {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.projects {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  .project .project-header {
+    padding: 0.2em 0 0;
+    margin: 0;
+  }
+
+  .project .project-description {
+    padding: 0;
+    margin: 0 2em 0 0;
+  }
+}
