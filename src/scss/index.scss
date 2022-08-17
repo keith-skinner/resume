@@ -37,7 +37,7 @@ header {
 }
 
 .summary {
-  padding: 0;
+  padding: 0.2em 0 0;
   margin: 0 2em 0 0;
 }
 
@@ -47,7 +47,7 @@ header {
   list-style-type: none;
 
   li {
-    padding: 0;
+    padding: 0.1em 0 0;
     margin: 0;
     list-style-position: inside;
     position: relative;
@@ -112,6 +112,7 @@ ul.personal {
 
   .job-company {
     margin: 0;
+    padding: 0 0 0.2em;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
   }
@@ -126,7 +127,7 @@ ul.personal {
 
   .job-info {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 0.4em;
     list-style-type: disc;
     grid-column: 1 / 3;
     grid-row: 3 / 4;
@@ -137,7 +138,7 @@ ul.personal {
 
     li.job-desc::before {
       content: "\2022 ";
-      padding: 0 0.3em 0 0;
+      padding: 0 0.4em 0 0;
     }
   }
 }
@@ -187,7 +188,7 @@ ul.personal {
     }
 
     ul.edu-classes {
-      margin: 0;
+      margin: 0.2em 0 0;
       padding: 0;
       grid-column: 1 / 3;
       grid-row: 3 / 4;
@@ -222,7 +223,7 @@ ul.personal {
   list-style-type: none;
 
   .project .project-header {
-    padding: 0.2em 0 0;
+    padding: 0.2em 0;
     margin: 0;
   }
 
