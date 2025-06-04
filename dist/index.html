@@ -1,150 +1,146 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <title>Keith Skinner Resume</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="/index.css">
-        <script src="./bundle.js"></script>
-        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    </head>
 
-    <body>
-        <div class="container">
-            <header>
-                <h1 class="name">Keith Skinner</h1>
-                <ul class="personal">
-                    <li class="personal-area">SF, Bay Area</li>
-                    <li class="personal-phone"><span class="bullet"> &bull; </span>(510) 962-2585</li>
-                    <li class="personal-email"><span class="bullet"> &bull; </span>keithskinner93@gmail.com</li>
-                </ul>
-                <ul class="links">
-                    <li class="link">
-                        <a href="https://linkedin.com/in/keith-skinner">
-                            <span>linkedin.com/in/keith-skinner</span>
-                            <span class="iconify-inline" data-icon="mdi:linkedin"></span>
-                        </a>
-                    </li>
-                    <li class="link">
-                        <a href="https://github.com/keith-skinner">
-                            <span>github.com/keith-skinner</span>
-                            <span class="iconify-inline" data-icon="akar-icons:github-fill"></span>
-                        </a>
-                    </li>
-                </ul>
-            </header>
-            <main>
-                <article class="content"> <!-- Summary -->
-                    <h2 class="content-header">Summary</h2>
-                    <hr class="content-header-break"/>
-                    <div class="content-body">
-                        <p class="summary">A full stack software engineer dedicated to organized, performant code. With experience in developing, testing, and designing in multiple programming paradigms and languages. Using up to date and relevant industry standards, principals, and best practices, I'm able to produce fast, reliable, and maintainable software.</p>
-                    </div>
-                </article>
-                <article class="content"> <!-- Professional Skills -->
-                    <h2 class="content-header">Professional Skills</h2>
-                    <hr class="content-header-break"/>
-                    <div class="content-body">
-                        <ul class="skills">
-                            <li><b>Languages:</b> C/C++, Java, Python, Bash, HTML/CSS/Javascript, SQL</li>
-                            <li><b>Tools:</b> Git, CMake, GDB, Valgrind, Boost Libraries, Ant, Simulink, Bitbucket, Confluence, ProtocolBuffers, Node, ReactJS SCSS, MySql, MongoDB</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="content"> <!-- Work Experience -->
-                    <h2 class="content-header">Work Experience</h2>
-                    <hr class="content-header-break"/>
-                    <div class="content-body">
-                        <ul class="job-history">
-                            <li class="job">
-                                <h3 class="job-title">Software Engineer</h3>
-                                <h4 class="job-company">ArgonST, Inc. A Boeing Company</h4>
-                                <p class="job-term">Sept. 2020 - Present</p>
-                                <ul class="job-info">
-                                    <li class="job-desc">Processing, interpreting and displaying data relating to radio frequency technologies</li>
-                                    <li class="job-desc">Develop new features and tools to improve and support existing products in C++, Java, and Python</li>
-                                    <li class="job-desc">Implement design specifications into concrete features</li>
-                                    <li class="job-desc">Refactor major system components in a legacy code base</li>
-                                    <li class="job-desc">Leverage debuggers and TDD to confirm behavior and correctness</li>
-                                    <li class="job-desc">Mentor team members on Java and Python best practices</li>
-                                    <li class="job-desc">Document system behavior, implementation, and intent</li>
-                                </ul>
-                            </li>
-                            <!-- <li class="job">
-                                <h3 class="job-title">Professional Tutor</h3>
-                                <h4 class="job-company">CSU Channel Islands, Computer Science Dept.</h4>
-                                <p class="job-term">Dec. 2018 - Dec. 2019</p>
-                                <ul class="job-info">
-                                    <li class="job-desc">Provide one-on-one and small group tutoring for STEM students</li>
-                                    <li class="job-desc">Maintain weekly hours in the Computer Science Resource Center/STEM Center</li>
-                                    <li class="job-desc">Tutor students mainly in math, physics and computer science</li>
-                                    <li class="job-desc">Customize teaching strategies to maximize results</li>
-                                    <li class="job-desc">Collaborate with faculty in order to set goals and assess progress</li>
-                                </ul>
-                            </li> -->
-                        </ul>
-                    </div>
-                </article>
-                <article class="content"> <!-- Education -->
-                    <h2 class="content-header">Education</h2>
-                    <hr class="content-header-break"/>
-                    <div class="content-body">
-                        <ul class="edus">
-                            <li class="edu">
-                                <h3 class="edu-title">CSU Channel Islands</h3>
-                                <span class="edu-location">Camarillo, CA</span>
-                                <h4 class="edu-degree">Bachelor of Science Computer Science</h4>
-                                <span class="edu-date">Dec. 2019</span>
-                                <ul class="edu-classes">
-                                    <li class="edu-class">Courses:</li>
-                                    <li class="edu-class">Database Theory and Design</li>
-                                    <li class="edu-class">Human Computer Interaction</li>
-                                    <li class="edu-class">Computer Graphics</li>
-                                    <li class="edu-class">Operating Systems</li>
-                                    <li class="edu-class">Computer Networks</li>
-                                    <li class="edu-class">Embedded Systems</li>
-                                    <li class="edu-class">Mobile Robotics</li>
-                                    <li class="edu-class">Multivariable Calculus</li>
-                                    <li class="edu-class">Differential Equations</li>
-                                    <li class="edu-class">Probability and Statistics</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="content"> <!-- Projects -->
-                    <h2 class="content-header">Projects</h2>
-                    <hr class="content-header-break"/>
-                    <div class="content-body">
-                        <ul class="projects">
-                            <li class="project"> <!-- TCP From UDP -->
-                                <h3 class="project-header">TCP From UDP</h3>
-                                <p class="project-description">
-                                    Implements the Transmission Control Protocol using a User Datagram Protocol socket, written in Python.
-                                    The features of the protocol implemented include the three-way handshake, error checking, reliability
-                                    and retransmission with network-congestion avoidance (TCP Reno).
-                                </p>
-                            </li>
-                            <li class="project"> <!-- LISP Interpreter -->
-                                <h3 class="project-header">LISP Interpreter</h3>
-                                <p class="project-description">Implements the lisp language as an interpreter. Included languages features are constants, user-defined functions and variables, and structures. Leverages GNU's yacc and flex.</p>
-                            </li>
-                            <li class="project"> <!-- File System in User Space -->
-                                <h3 class="project-header">File System in User Space</h3>
-                                <p class="project-description">Simulates a hard drive where the disk space is kept in user-space RAM. Is fully mountable and allows all normal linux file operations, such as, links, read, write, group, and user permissions. Leverages the linux FUSE library.</p>
-                            </li>
-                            <li class="project"> <!-- GameBoy Emulator -->
-                                <h3 class="project-header">GameBoy Emulator</h3>
-                                <p class="project-description">Simulates a Sharp 35902 CPU. A single-threaded CPU and part of a SoC with memory mapped I/O, bank switched ROM, RAM and tile map, and a tile based rasterizer with sprites using OpenGL and C++20.</p>
-                            </li>
-                            <li class="project"> <!-- WebGL Renderer -->
-                                <h3 class="project-header">WebGL Renderer</h3>
-                                <p class="project-description">Implemented a WebGL renderer with Phong Lighting for model work. Includes model transformations and material properties.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-            </main>
-        </div>
-    </body>
+<head>
+    <title>Keith Skinner Resume</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="./bundle.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="name-desktop">Keith Skinner</h1>
+            <ul class="personal personal-desktop">
+                <li class="area">SF, Bay Area</li>
+                <li class="phone">(510) 962-2585</li>
+                <li class="email">keithskinner93@gmail.com</li>
+            </ul>
+            <ul class="links-desktop">
+                <li class="link">
+                    <a href="https://linkedin.com/in/keith-skinner">
+                        <span>linkedin.com/in/keith-skinner</span>
+                        <span class="iconify-inline" data-icon="mdi:linkedin"></span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="https://github.com/keith-skinner">
+                        <span>github.com/keith-skinner</span>
+                        <span class="iconify-inline" data-icon="akar-icons:github-fill"></span>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <article class="content"> <!-- Summary -->
+                <h2 class="content-header">Summary</h2>
+                <hr class="content-header-break" />
+                <div class="content-body">
+                    <p class="summary-desktop">A full stack software engineer dedicated to organized, performant code. With
+                        experience in developing, testing, and designing in multiple programming paradigms and
+                        languages. Using up to date and relevant industry standards, principals, and best practices, I
+                        am
+                        able to produce fast, reliable, and maintainable software.</p>
+                </div>
+            </article>
+            <article class="content"> <!-- Professional Skills -->
+                <h2 class="content-header">Professional Skills</h2>
+                <hr class="content-header-break" />
+                <div class="content-body">
+                    <ul class="skills languages">
+                        <li>C/C++</li>
+                        <li>C#</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Bash</li>
+                        <li>SQL</li>
+                    </ul>
+                    <ul class="skills tools">
+                        <li>Git</li>
+                        <li>Clang</li>
+                        <li>CMake</li>
+                        <li>vxWorks</li>
+                        <li>Jenkins</li>
+                        <li>IBM DOORS</li>
+                        <li>VectorCAST</li>
+                        <li>Visual Studio</li>
+                        <li>Coverity</li>
+                        <li>Bitbucket</li>
+                        <li>Confluence</li>
+                        <li>Protocol Buffers</li>
+                        <li>Boost Libraries</li>
+                        <li>TestComplete</li>
+                        <li>GDB</li>
+                        <li>Valgrind</li>
+                        <li>MySql</li>
+                        <li>Node</li>
+                        <li>ReactJS</li>
+                        <li>SCSS</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="content"> <!-- Work Experience -->
+                <h2 class="content-header">Work Experience</h2>
+                <hr class="content-header-break" />
+                <div class="content-body job-info-desktop">
+                    <h3 class="job-title">Software Engineer</h3>
+                    <h4 class="job-company">ArgonST, Inc. A Boeing Company</h4>
+                    <p class="job-term">Sept. 2020 - Present</p>
+                    <h5 class="job-accomplishments-title">Impact</h5>
+                    <ul class="job-accomplishment-list">
+                        <li class="job-accomplishment">Recreated many C++ STL containers, allocators, and related classes due to program requirements restricting the use of exceptions and allocations, as well as, lack of constexpr support in <b>C++14</b>.</li>
+                        <li class="job-accomplishment">Decoupled the embedded GUI from the windows GUI implementation to reduce duplicated <b>OpenGL</b> code.</li>
+                        <li class="job-accomplishment">Created application, for testing by non-developers, which is used to simulate poor communication conditions including latency and message corruption in <b>C#</b>.</li>
+                        <li class="job-accomplishment">Created Jenkins pipeline to enforce coding requirements and output/reject non-compliant code sections <b>(Jenkins, Bash, Python, Coverity)</b>.</li>
+                        <li class="job-accomplishment">Created <b>CMake</b> scripts that moved runtime operations into build-time constructs which were then able to be copied into libraries and executables.</li>
+                        <li class="job-accomplishment">Fixed Squashing of data being presented to tables in longstanding <b>Java</b> table implementation.</li>
+                        <li clsss="job-accomplishment">Created a source code parsing script that updated or created copyright-comments for new and previously updated files using <b>Python</b> and <b>Bash</b> utilities.</li>
+                    </ul>
+                    <h5 class="job-desc-title">Responsibilities</h5>
+                    <ul class="job-descs">
+                        <li class="job-desc">Process, interpret and display data relating to radio frequency technologies</li>
+                        <li class="job-desc">Develop new features and tools to improve and support existing products in C++, C#, Java, and Python</li>
+                        <li class="job-desc">Implement integration and end-to-end testing scripts with internal and commercial tools</li>
+                        <li class="job-desc">Decouple embedded and desktop dependencies to allow for desktop emulation</li>
+                        <li class="job-desc">Implement design specifications and requirements into concrete features</li>
+                        <li class="job-desc">Refactor major system components in a legacy code base</li>
+                        <li class="job-desc">Leverage debuggers and unit tests to confirm behavior and correctness</li>
+                        <li class="job-desc">Document system behavior, implementation, and intent</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="content"> <!-- Education -->
+                <h2 class="content-header">Education</h2>
+                <hr class="content-header-break" />
+                <div class="content-body">
+                    <ul class="edus">
+                        <li class="edu">
+                            <h3 class="edu-title">CSU Channel Islands</h3>
+                            <span class="edu-location">Camarillo, CA</span>
+                            <h4 class="edu-degree">Bachelor of Science Computer Science</h4>
+                            <span class="edu-date">Dec. 2019</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="content"> <!-- Projects -->
+                <h2 class="content-header">Projects</h2>
+                <div class="content-header-break"></div>
+                <hr />
+                <div class="content-body">
+                    <ul class="projects">
+                        <li class="project"> <!-- GameBoy Emulator -->
+                            <h3 class="project-header">Sharp 35902 SoC Emulator</h3>
+                            <p class="project-description">Simulates a Sharp 35902 CPU with C++23. A single-threaded CPU and part of a SoC with memory mapped registers, interrupts, bank switched ROM, RAM, and tile map.</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+
 </html>
